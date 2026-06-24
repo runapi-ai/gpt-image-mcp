@@ -1,0 +1,24 @@
+{
+  "endpoints": {
+    "gpt-image-1.5/edit_image": {
+      "unit_price_cents": 4,
+      "billing_config": {
+        "key": "quality",
+        "overrides": {
+          "medium": 4,
+          "high": 22
+        }
+      }
+    },
+    "gpt-image-1.5/text_to_image": {
+      "unit_price_cents": 4,
+      "billing_config": {
+        "key": "quality",
+        "overrides": {
+          "medium": 4,
+          "high": 22
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "catalog_models": [
+    "gpt-image-1.5"
+  ],
+  "actions": {
+    "gpt-image/edit-image": {
+      "model": "GPT Image",
+      "endpoint": "edit_image",
+      "models": [
+        "gpt-image-1.5"
+      ],
+      "fields_by_model": {
+        "gpt-image-1.5": {
+          "prompt": {
+            "required": true
+          },
+          "quality": {
+            "enum": [
+              "medium",
+              "high"
+            ],
+            "required": true
+          },
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "2:3",
+              "3:2"
+            ],
+            "required": true
+          },
+          "source_image_urls": {
+            "required": true
+          }
+        }
+      }
+    },
+    "gpt-image/text-to-image": {
+      "model": "GPT Image",
+      "endpoint": "text_to_image",
+      "models": [
+        "gpt-image-1.5"
+      ],
+      "fields_by_model": {
+        "gpt-image-1.5": {
+          "prompt": {
+            "required": true
+          },
+          "quality": {
+            "enum": [
+              "medium",
+              "high"
+            ],
+            "required": true
+          },
+          "aspect_ratio": {
+            "enum": [
+              "1:1",
+              "2:3",
+              "3:2"
+            ],
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}

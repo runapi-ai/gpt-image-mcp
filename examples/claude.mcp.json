@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "gpt-image": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@runapi.ai/gpt-image-mcp"
+      ],
+      "env": {
+        "RUNAPI_API_KEY": "${RUNAPI_API_KEY}"
+      }
+    }
+  }
+}
