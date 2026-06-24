@@ -1,7 +1,7 @@
 {
   "name": "@runapi.ai/gpt-image-mcp",
-  "version": "0.1.1",
-  "description": "GPT Image MCP server for RunAPI — create GPT Image AI tasks (edit image, text to image), poll status, and check pricing across 1 model with one API key.",
+  "version": "0.1.2",
+  "description": "RunAPI GPT Image MCP server for image generation: create tasks, poll results, and check pricing across 1 model from Claude Code, Codex, Cursor, and VS Code.",
   "type": "module",
   "main": "dist/src/index.js",
   "bin": {
@@ -25,12 +25,16 @@
   },
   "keywords": [
     "runapi",
+    "runapi-ai",
     "mcp",
+    "mcp-server",
     "model-context-protocol",
-    "ai",
+    "ai-agents",
+    "claude-code",
+    "cursor",
+    "vscode",
     "gpt-image",
     "gpt-image-mcp",
-    "gpt-image-ai",
     "gpt-image-api",
     "image-generation",
     "ai-image",
@@ -39,7 +43,7 @@
   ],
   "author": "RunAPI",
   "license": "Apache-2.0",
-  "homepage": "https://runapi.ai",
+  "homepage": "https://runapi.ai/models/gpt-image",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/runapi-ai/gpt-image-mcp.git"
