@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.7](https://github.com/runapi-ai/gpt-image-mcp/releases/tag/v0.1.7) - 2026-07-23
+
+### Changed
+- Refresh the generated pricing snapshot with the reviewed image editing price.
+
+
 ## [v0.1.6](https://github.com/runapi-ai/gpt-image-mcp/releases/tag/v0.1.6) - 2026-07-08
 
 ### Fixed
