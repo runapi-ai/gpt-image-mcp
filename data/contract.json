@@ -6,22 +6,25 @@
     "gpt-image/edit-image": {
       "model": "GPT Image",
       "endpoint": "edit_image",
+      "task_type": "asynchronous",
       "models": [
         "gpt-image-1.5"
       ],
       "fields_by_model": {
         "gpt-image-1.5": {
+          "model": {
+            "type": "string"
+          },
           "prompt": {
+            "type": "string",
             "required": true
           },
-          "quality": {
-            "enum": [
-              "medium",
-              "high"
-            ],
+          "source_image_urls": {
+            "type": "array",
             "required": true
           },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "2:3",
@@ -29,8 +32,16 @@
             ],
             "required": true
           },
-          "source_image_urls": {
+          "quality": {
+            "type": "string",
+            "enum": [
+              "medium",
+              "high"
+            ],
             "required": true
+          },
+          "callback_url": {
+            "type": "string"
           }
         }
       }
@@ -38,28 +49,38 @@
     "gpt-image/text-to-image": {
       "model": "GPT Image",
       "endpoint": "text_to_image",
+      "task_type": "asynchronous",
       "models": [
         "gpt-image-1.5"
       ],
       "fields_by_model": {
         "gpt-image-1.5": {
-          "prompt": {
-            "required": true
+          "model": {
+            "type": "string"
           },
-          "quality": {
-            "enum": [
-              "medium",
-              "high"
-            ],
+          "prompt": {
+            "type": "string",
             "required": true
           },
           "aspect_ratio": {
+            "type": "string",
             "enum": [
               "1:1",
               "2:3",
               "3:2"
             ],
             "required": true
+          },
+          "quality": {
+            "type": "string",
+            "enum": [
+              "medium",
+              "high"
+            ],
+            "required": true
+          },
+          "callback_url": {
+            "type": "string"
           }
         }
       }

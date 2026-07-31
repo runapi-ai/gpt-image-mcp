@@ -1,7 +1,7 @@
 <h1 align="center">RunAPI GPT Image MCP Server</h1>
 
 <p align="center">
-  <strong>GPT Image API access for AI agents: create image generation tasks, poll results, and check pricing through one focused MCP server.</strong>
+  <strong>GPT Image API access for AI agents: run image generation operations, poll asynchronous results, and check pricing through one focused MCP server.</strong>
 </p>
 
 <p align="center">
@@ -74,10 +74,10 @@ Ready-made examples are in [`examples/`](examples/) for Claude, Cursor, Windsurf
 
 | Tool | Auth | Purpose |
 |---|---|---|
-| `edit_image` | Yes | Create a GPT Image edit image task and optionally wait for a terminal status. Returns the task id, status, output URLs, and pricing snapshot. |
-| `text_to_image` | Yes | Create a GPT Image text to image task and optionally wait for a terminal status. Returns the task id, status, output URLs, and pricing snapshot. |
+| `edit_image` | Yes | Create a GPT Image edit image task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
+| `text_to_image` | Yes | Create a GPT Image text to image task and optionally wait for a terminal status. Returns the task id, status, and output URLs. |
 | `get_task` | Yes | Fetch the current status and latest payload for an existing task. |
-| `check_pricing` | No | Look up the current pricing snapshot for a GPT Image model and endpoint. |
+| `check_pricing` | No | Look up current pricing for a GPT Image model and endpoint. |
 
 ---
 
